@@ -19,6 +19,17 @@ import sys
 # [1] https://specifications.freedesktop.org/basedir-spec/latest/
 
 
+def _prefer(path):
+    """Return os.path.expanduser(path) if it exists, or $HOME otherwise."""
+
+    path = os.path.expanduser(path)
+
+    if os.path.isdir(path):
+        return path
+    else:
+        return os.path.expanduser("~")
+
+
 def _xdg_dir(env_name, default_value):
     """Return $env_name if specified, otherwise default_value."""
 
@@ -40,11 +51,11 @@ def get_appdata():
 
 def get_desktop():
     """Return the current user's Desktop folder."""
-    return os.path.expanduser("~/Desktop")
+    return _prefer("~/Desktop")
 
 def get_downloads():
     """Return the current user's Downloads folder."""
-    return os.path.expanduser("~/Downloads")
+    return _prefer("~/Downloads")
 
 def get_local_appdata():
     """Return the current user's local Application Data folder."""
@@ -53,19 +64,19 @@ def get_local_appdata():
 
 def get_my_documents():
     """Return the current user's My Documents folder."""
-    return os.path.expanduser("~")
+    return _prefer("~/Documents")
 
 def get_my_music():
     """Return the current user's My Music folder."""
-    return os.path.expanduser("~")
+    return _prefer("~/Music")
 
 def get_my_pictures():
     """Return the current user's My Pictures folder."""
-    return os.path.expanduser("~")
+    return _prefer("~/Pictures")
 
 def get_my_videos():
     """Return the current user's My Videos folder."""
-    return os.path.expanduser("~")
+    return _prefer("~/Videos")
 
 def get_profile():
     """Return the current user's profile folder."""
