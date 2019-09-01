@@ -8,7 +8,7 @@ AUTHOR = "Benjamin Johnson"
 AUTHOR_EMAIL = "bmjcode@gmail.com"
 DESCRIPTION = "Cross-platform access to a user's special folders"
 
-with open("README", "r") as readme:
+with open("README.md", "r") as readme:
     LONG_DESCRIPTION = readme.read()
 
 URL = "https://github.com/bmjcode/userpaths"
@@ -27,6 +27,7 @@ setup(name=NAME,
       author_email=AUTHOR_EMAIL,
       description=DESCRIPTION,
       long_description=LONG_DESCRIPTION,
+      long_description_content_type="text/markdown",
       url=URL,
       packages=PACKAGES,
       classifiers=CLASSIFIERS)
