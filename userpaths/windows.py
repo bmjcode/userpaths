@@ -5,7 +5,6 @@ automatically select the correct implementation for the current platform.
 """
 
 import os
-import sys
 import ctypes
 import ctypes.wintypes
 

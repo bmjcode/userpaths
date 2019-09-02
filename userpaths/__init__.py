@@ -15,7 +15,6 @@ References:
 [1] http://ginstrom.com/code/winpaths.html
 """
 
-import os
 import sys
 
 if sys.platform.startswith("win"):

@@ -5,7 +5,6 @@ automatically select the correct implementation for the current platform.
 """
 
 import os
-import sys
 
 # Paths within a user's home directory are, to my knowledge, not as
 # standardized on Unix as they are on Windows. The paths returned by this
