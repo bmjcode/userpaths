@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """Windows implementation of userpaths.
 
 Your application should not use this directly; "import userpaths" will

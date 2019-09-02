@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """Unix implementation of userpaths.
 
 Your application should not use this directly; "import userpaths" will

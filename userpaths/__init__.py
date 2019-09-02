@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """Cross-platform access to a user's special folders.
 
 The userpaths module provides cross-platform access to a user's special

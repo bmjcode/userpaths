@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """Test program for the userpaths module."""
 
 # For Python 2 compatibility
