@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 NAME = "userpaths"
-VERSION = "0.1.2"
+VERSION = "0.1.3"
 AUTHOR = "Benjamin Johnson"
 AUTHOR_EMAIL = "bmjcode@gmail.com"
 DESCRIPTION = "Cross-platform access to a user's special folders"
